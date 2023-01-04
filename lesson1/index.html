@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Lesson1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../lesson1/style/style.css" />
+  </head>
+  <body>
+    <div class="form" id="form">
+      <form class="form-content" id="main-form" method="post">
+        <h2>SingUp form</h2>
+        <!-- <span>LogIn</span> -->
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input
+              class="input inp-txt"
+              type="text"
+              name="name"
+              placeholder="Name"
+              id="name"
+            />
+          </li>
+          <li class="password">
+            <label for="password">Password:</label>
+            <input
+              class="input inp-txt"
+              type="password"
+              name="pass"
+              placeholder="password"
+              id="pass"
+            />
+            <a
+              href="#"
+              class="pass-control"
+              onclick="return show_hide_pass(this);"
+            ></a>
+          </li>
+          <li class="password">
+            <label for="password">Password:</label>
+
+            <input
+              class="input inp-txt"
+              type="password"
+              name="repass"
+              placeholder="confirm password"
+              id="repass"
+            />
+            <a
+              href="#"
+              class="repass-control"
+              onclick="return show_hide_repass(this);"
+            ></a>
+          </li>
+          <li class="radio">
+            <span>Gender:</span>
+            <input
+              class="input"
+              type="radio"
+              name="gender"
+              id="male"
+              value="Male"
+            />
+            <label for="male">Male</label>
+            <input
+              class="input"
+              type="radio"
+              name="gender"
+              id="female"
+              value="Female"
+            />
+            <label for="female">Female</label>
+            <input
+              class="input"
+              type="radio"
+              name="gender"
+              id="other"
+              value="Other"
+            />
+            <label for="other">Other</label>
+          </li>
+          <li>
+            <input
+              class="bt-submit"
+              type="submit"
+              name="submit"
+              value="Submit"
+            />
+          </li>
+          <li class="error" id="error"></li>
+        </ul>
+      </form>
+
+      <!-- script1 <button name="mainButton" onclick="onClickButton(this)">PUSH</button>
+      <input name="mainInput" oninput="onInput(this)" /> -->
+    </div>
+    <script src="../lesson1/script/scripts.js"></script>
+  </body>
+</html>
